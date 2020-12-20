@@ -1,3 +1,27 @@
-// header{
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    // regole di debug
+    background-color: red;
+    // fine debug
     
-// }
+    nav {
+        
+        display: flex;
+        justify-content: space-between;
+        
+        // .box-right{
+            
+        // }
+        ul{
+            @include ul;
+            
+            li{
+                display: inline-block;
+            }
+        }
+    }
+    
+}

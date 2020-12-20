@@ -10,8 +10,35 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    // font-family: 'HarmoniaSansProCyr-SemiBd';
+    color: $text_color;
 }
 
-body{
-    background-color: red;
+a{
+    text-decoration: none;
+    color: $text_color;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    // regole di debug
+    border: 1px solid;
+    // fine degug
+}
+
+ // regole di debug
+ .section-top,
+ .section-center-a,
+ .row.top, .row.bottom, .row.center-a, .row.center-b,
+ .section-center-b,
+ .section-bottom,
+ .box.lext, .box.right {
+    @include debug;
+}
+// fine debug
+
+.section-center-b .row{
+    @include flex;
+    width: 100%;
 }

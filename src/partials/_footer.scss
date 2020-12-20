@@ -1,3 +1,22 @@
-// footer{
+footer{
+    .container{
 
-// }
+        @include flex;
+
+        .box{
+            @include two-box;
+        }
+
+        .box.right{
+            display: flex;
+
+            ul{
+                @include ul;
+                border: 1px solid;
+                min-height: 200px;
+                width: 20%;
+                
+            }
+        }
+    }
+}

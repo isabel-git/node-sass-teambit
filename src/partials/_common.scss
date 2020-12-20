@@ -1,4 +1,26 @@
-// @mixin flex {
-    
+@mixin ul {
+    list-style-type: none;
+    // display: inline-block;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin two-box {
+    width: 50%;
+}
+
+// @mixin button{
+
 // }
 
+// @mixin title{
+
+// }
+
+// dubug
+@mixin debug {
+    min-height: 100px;
+    border: 1px solid;
+}

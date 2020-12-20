@@ -1,3 +1,34 @@
-// main{
+main{
+
+    .section-top{
+
+        .container{
+
+            @include flex;
     
-// }
+            .box {
+                @include two-box;
+            }
+
+        }
+    }
+   
+    .section-center-a{
+        background-color: $section_color;
+    }
+
+    .section-center-b{
+
+        .box{
+            @include two-box;
+            // regole di debug
+            min-height: 200px;
+            // fine debug
+        }
+    }
+
+    .section-bottom{
+        background-color: $section_color;
+        
+    }
+}
