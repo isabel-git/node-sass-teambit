@@ -30,6 +30,15 @@ main .section-center-a {
   background-color: #ffe7d2;
 }
 
+main .section-center-a .row .flex {
+  display: flex;
+  width: 100%;
+}
+
+main .section-center-a .row .flex .box {
+  width: calc(100% / 3);
+}
+
 main .section-center-b .box {
   width: 50%;
   min-height: 200px;
@@ -40,15 +49,35 @@ main .section-bottom {
 }
 
 footer .container {
+  padding: 70px 0;
   display: flex;
 }
 
-footer .container .box {
-  width: 50%;
+footer .container .box.left {
+  width: 35%;
+}
+
+footer .container .box.left img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+footer .container .box.left h4 {
+  width: 70%;
+  display: inline-block;
+}
+
+footer .container .box.left h4 a {
+  color: #30488f;
+}
+
+footer .container .box.left h4 a:hover {
+  text-decoration: underline;
 }
 
 footer .container .box.right {
   display: flex;
+  width: 65%;
 }
 
 footer .container .box.right ul {
@@ -56,6 +85,15 @@ footer .container .box.right ul {
   border: 1px solid;
   min-height: 200px;
   width: 20%;
+  padding: 0 10px;
+}
+
+footer .container .box.right ul li {
+  line-height: 2;
+}
+
+footer .container .box.right ul li a:hover {
+  color: #30488f;
 }
 
 * {
@@ -78,16 +116,28 @@ a {
 
 .section-top,
 .section-center-a,
-.row.top,
-.row.bottom,
-.row.center-a,
-.row.center-b,
+.row,
 .section-center-b,
 .section-bottom,
-.box.lext,
-.box.right {
+.box {
   min-height: 100px;
   border: 1px solid;
+}
+
+img {
+  width: 20%;
+}
+
+.button {
+  background-color: #30488f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #233569;
 }
 
 .section-center-b .row {

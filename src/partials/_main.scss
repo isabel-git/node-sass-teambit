@@ -14,7 +14,19 @@ main{
     }
    
     .section-center-a{
-        background-color: $section_color;
+        background-color: $section_background;
+
+        .row{
+
+            .flex{
+
+                @include flex;
+                width: 100%;
+                .box{
+                    width: calc(100% / 3);
+                }
+            }
+        }
     }
 
     .section-center-b{
@@ -28,7 +40,7 @@ main{
     }
 
     .section-bottom{
-        background-color: $section_color;
+        background-color: $section_background;
         
     }
 }

@@ -1,21 +1,52 @@
 footer{
+
     .container{
+        padding: 70px 0;
 
         @include flex;
 
-        .box{
-            @include two-box;
+        .box.left{
+            width: 35%;
+            
+            img{
+                width: 60px;
+                margin-right: 10px;
+            }
+
+            h4{
+                width: 70%;
+                display: inline-block;
+
+                a{
+                    color: $link_background;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
 
         .box.right{
             display: flex;
+            width: 65%;
 
             ul{
                 @include ul;
                 border: 1px solid;
                 min-height: 200px;
                 width: 20%;
+                padding: 0 10px;
                 
+                li {
+                    line-height: 2;
+
+                    a{
+
+                        &:hover{
+                            color: $link_background;
+                        }
+                    }
+                }
             }
         }
     }
