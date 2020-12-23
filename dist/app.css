@@ -34,12 +34,12 @@ header nav .box.right ul li {
 
 header nav .box.right ul li .header.button {
   background-color: #fff;
-  border: 1px solid #30488f;
-  color: #30488f;
+  border: 1px solid #4466d4;
+  color: #4466d4;
 }
 
 header nav .box.right ul li .header.button:hover {
-  background-color: #30488f;
+  background-color: #4466d4;
   color: #fff;
 }
 
@@ -75,7 +75,7 @@ main .section-top .container .box.left a {
 }
 
 main .section-top .container .box.left a:hover {
-  color: #30488f;
+  color: #4466d4;
 }
 
 main .section-top .container .box.right img {
@@ -83,7 +83,7 @@ main .section-top .container .box.right img {
 }
 
 main .section-center-a {
-  background-color: #ffe7d2;
+  background-color: #7f14d4;
 }
 
 main .section-center-a h2 {
@@ -138,11 +138,11 @@ main .section-center-b .row .box a {
 }
 
 main .section-center-b .row .box a {
-  color: #30488f;
+  color: #4466d4;
 }
 
 main .section-center-b .row .box a:hover {
-  color: #233569;
+  color: #0e14ee;
 }
 
 main .section-center-b .top .box.left img,
@@ -178,7 +178,7 @@ main .section-center-b .bottom .box.right img {
 }
 
 main .section-bottom {
-  background-color: #ffe7d2;
+  background-color: #7f14d4;
   padding: 70px 0;
 }
 
@@ -211,7 +211,7 @@ main .section-bottom .box.top .box.profil div {
 }
 
 main .section-bottom .box.top .box.profil div .top {
-  color: #30488f;
+  color: #4466d4;
 }
 
 main .section-bottom .box.top .box.profil img {
@@ -233,7 +233,7 @@ main .section-bottom .box.bottom .link {
 }
 
 main .section-bottom .box.bottom .link a:hover {
-  color: #30488f;
+  color: #4466d4;
 }
 
 footer {
@@ -260,7 +260,7 @@ footer .container .box.left h4 {
 }
 
 footer .container .box.left h4 a {
-  color: #30488f;
+  color: #4466d4;
 }
 
 footer .container .box.left h4 a:hover {
@@ -283,19 +283,19 @@ footer .container .box.right ul li {
 }
 
 footer .container .box.right ul li a:hover {
-  color: #30488f;
+  color: #4466d4;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #58402c;
+  color: #040f0f;
 }
 
 a {
   text-decoration: none;
-  color: #58402c;
+  color: #040f0f;
 }
 
 .container {
@@ -304,7 +304,7 @@ a {
 }
 
 .button {
-  background-color: #30488f;
+  background-color: #4466d4;
   color: #fff;
   border-radius: 10px;
   padding: 10px;
@@ -312,6 +312,6 @@ a {
 }
 
 .button:hover {
-  background-color: #233569;
+  background-color: #0e14ee;
 }
 

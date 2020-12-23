@@ -1,7 +1,6 @@
 @import "partials/common";
 @import "partials/variables";
 @import "partials/header";
-// @import "partials/nav";
 @import "partials/main";
 @import "partials/footer";
 
@@ -10,7 +9,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    // font-family: 'HarmoniaSansProCyr-SemiBd';
     color: $text_color;
 }
 
