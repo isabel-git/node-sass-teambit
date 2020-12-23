@@ -1,46 +1,166 @@
 main{
 
+    // sezione top
     .section-top{
-
+        
         .container{
-
+            
             @include flex;
-    
+            
             .box {
                 @include two-box;
             }
-
+            
+            .box.right{
+                
+                img{
+                    width: 100%;
+                }
+            }
+            
         }
     }
-   
+    
+    // sezione centro A
     .section-center-a{
         background-color: $section_background;
-
+        
         .row{
 
-            .flex{
+            text-align: center;
 
+            .flex{
+                
                 @include flex;
                 width: 100%;
                 .box{
                     width: calc(100% / 3);
+                    
+                    img{
+                        height: 100px;
+                    }
+                    
+                }
+            }
+
+            .image{
+    
+                img{
+                    width: $image_small;
                 }
             }
         }
+        
     }
 
-    .section-center-b{
+    // sezione centro B   
+    .section-center-b {
 
-        .box{
-            @include two-box;
-            // regole di debug
-            min-height: 200px;
-            // fine debug
+        .row{
+            @include flex;
+            width: 100%;
+
+            .box{
+                @include two-box;
+                 // regole di debug
+                 min-height: 200px;
+                   // fine debug
+            }
         }
-    }
 
+        .top,
+        .center-b{
+            
+            .box.left {
+            
+               img {
+                   width: $image_large;
+                }
+           }
+            
+            .box.right{
+            
+                img {
+                    width: $image_medium;
+                }
+           }
+        }
+            
+        .center-a, 
+        .bottom{
+            
+            .box.left {
+            
+                img {
+                    width: $image_medium;                
+                }
+            
+            }
+            
+            .box.right{
+            
+                img {
+                    width: $image_large;
+                }
+                        
+            }
+        }
+            
+        
+    }
+       
+    // sezione bassa
     .section-bottom{
         background-color: $section_background;
+        padding: 70px 0;
+
+        h1, .box.bottom{
+            text-align: center;
+        }
+
+        .box.top{
+
+            background-color: $link_color;
+            border-radius: 10px;
+            width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            
+            p{
+                margin-bottom: 20px;
+            }
+
+            .box.profil{
+
+                div{
+                    width: 300px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    
+
+                    .top{
+                       color: $link_background;
+                    }
+                }
+
+                img{
+                    width: 40px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+            }
+
+
+
+        }
+
+        .box.bottom{
+            a{
+                &:hover{
+                    color: $link_background;
+                }
+            }
+        }
         
     }
 }

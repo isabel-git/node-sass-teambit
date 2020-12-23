@@ -1,7 +1,7 @@
 @import "partials/common";
 @import "partials/variables";
 @import "partials/header";
-@import "partials/nav";
+// @import "partials/nav";
 @import "partials/main";
 @import "partials/footer";
 
@@ -37,10 +37,6 @@ a{
     @include debug;
 }
 
-img{
-    width: 20%;
-}
-
 .button{
     background-color: $link_background;
     color: $link_color;
@@ -53,8 +49,3 @@ img{
     background-color: $link_hover;
 }
 // fine debug
-
-.section-center-b .row{
-    @include flex;
-    width: 100%;
-}

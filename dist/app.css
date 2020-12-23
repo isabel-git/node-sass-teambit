@@ -26,8 +26,16 @@ main .section-top .container .box {
   width: 50%;
 }
 
+main .section-top .container .box.right img {
+  width: 100%;
+}
+
 main .section-center-a {
   background-color: #ffe7d2;
+}
+
+main .section-center-a .row {
+  text-align: center;
 }
 
 main .section-center-a .row .flex {
@@ -39,17 +47,91 @@ main .section-center-a .row .flex .box {
   width: calc(100% / 3);
 }
 
-main .section-center-b .box {
+main .section-center-a .row .flex .box img {
+  height: 100px;
+}
+
+main .section-center-a .row .image img {
+  width: 25%;
+}
+
+main .section-center-b .row {
+  display: flex;
+  width: 100%;
+}
+
+main .section-center-b .row .box {
   width: 50%;
   min-height: 200px;
 }
 
+main .section-center-b .top .box.left img,
+main .section-center-b .center-b .box.left img {
+  width: 100%;
+}
+
+main .section-center-b .top .box.right img,
+main .section-center-b .center-b .box.right img {
+  width: 50%;
+}
+
+main .section-center-b .center-a .box.left img,
+main .section-center-b .bottom .box.left img {
+  width: 50%;
+}
+
+main .section-center-b .center-a .box.right img,
+main .section-center-b .bottom .box.right img {
+  width: 100%;
+}
+
 main .section-bottom {
   background-color: #ffe7d2;
+  padding: 70px 0;
+}
+
+main .section-bottom h1,
+main .section-bottom .box.bottom {
+  text-align: center;
+}
+
+main .section-bottom .box.top {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main .section-bottom .box.top p {
+  margin-bottom: 20px;
+}
+
+main .section-bottom .box.top .box.profil div {
+  width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+main .section-bottom .box.top .box.profil div .top {
+  color: #30488f;
+}
+
+main .section-bottom .box.top .box.profil img {
+  width: 40px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+main .section-bottom .box.bottom a:hover {
+  color: #30488f;
+}
+
+footer {
+  padding: 70px 0;
 }
 
 footer .container {
-  padding: 70px 0;
   display: flex;
 }
 
@@ -124,10 +206,6 @@ a {
   border: 1px solid;
 }
 
-img {
-  width: 20%;
-}
-
 .button {
   background-color: #30488f;
   color: #fff;
@@ -138,10 +216,5 @@ img {
 
 .button:hover {
   background-color: #233569;
-}
-
-.section-center-b .row {
-  display: flex;
-  width: 100%;
 }
 
