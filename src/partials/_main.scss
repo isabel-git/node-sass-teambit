@@ -2,13 +2,40 @@ main{
 
     // sezione top
     .section-top{
-        
+        padding: 140px 0;
+
         .container{
             
             @include flex;
             
             .box {
                 @include two-box;
+
+            }
+
+            .box.left{
+                h1{
+                    font-size: $lg_font;
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    font-size: $md_font;
+                    margin-bottom: 20px;
+                }
+
+                span{
+                    color: $or_color;
+                }
+                
+                a{
+                    display: inline-block;
+                    margin-top: 20px;
+
+                    &:hover{
+                        color: $link_background;
+                    }
+                }
             }
             
             .box.right{
@@ -25,8 +52,13 @@ main{
     .section-center-a{
         background-color: $section_background;
         
-        .row{
+        h2{
+            margin: 70px 0;
+        }
 
+        .row{
+            
+            padding: 50px 0;
             text-align: center;
 
             .flex{
@@ -35,6 +67,7 @@ main{
                 width: 100%;
                 .box{
                     width: calc(100% / 3);
+
                     
                     img{
                         height: 100px;
@@ -44,11 +77,19 @@ main{
             }
 
             .image{
-    
+                
+                padding-top: 70px;
                 img{
                     width: $image_small;
                 }
+
             }
+
+            
+        }
+        .row.top{
+
+            border-bottom: 1px solid;
         }
         
     }
@@ -59,12 +100,25 @@ main{
         .row{
             @include flex;
             width: 100%;
+            padding: 90px 0;
 
             .box{
                 @include two-box;
-                 // regole di debug
-                 min-height: 200px;
-                   // fine debug
+                 
+                h2,
+                p,
+                a{
+                    font-size: $md_font;
+                    margin-bottom: 30px;
+                }
+
+                a{
+                    color: $link_background;
+                    &:hover{
+                        color: $link_hover;
+                    }
+                }
+
             }
         }
 
@@ -79,9 +133,11 @@ main{
            }
             
             .box.right{
-            
+                margin-right: 140px;
+
                 img {
                     width: $image_medium;
+                    margin-top: 30px;
                 }
            }
         }
@@ -90,9 +146,11 @@ main{
         .bottom{
             
             .box.left {
-            
+                
+                margin-left: 140px;
                 img {
-                    width: $image_medium;                
+                    width: $image_medium;   
+                    margin-top: 30px;             
                 }
             
             }
@@ -113,10 +171,15 @@ main{
     .section-bottom{
         background-color: $section_background;
         padding: 70px 0;
-
-        h1, .box.bottom{
+        
+        h1{
+            margin-bottom: 70px;
+        }
+        
+        h1, .box.bottom, a{
             text-align: center;
         }
+
 
         .box.top{
 
@@ -150,15 +213,23 @@ main{
                 }
             }
 
-
-
         }
 
         .box.bottom{
-            a{
-                &:hover{
-                    color: $link_background;
+            margin-top: 70px;
+
+            span{
+                color: $or_color;
+            }
+
+            .link{
+                margin-top: 20px;
+                a{
+                    &:hover{
+                        color: $link_background;
+                    }
                 }
+
             }
         }
         

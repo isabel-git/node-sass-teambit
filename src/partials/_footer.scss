@@ -1,6 +1,8 @@
 footer{
 
-    padding: 70px 0;
+    padding-top: 70px;
+    padding-bottom: 40px;
+
     .container{
 
         @include flex;
@@ -32,8 +34,6 @@ footer{
 
             ul{
                 @include ul;
-                border: 1px solid;
-                min-height: 200px;
                 width: 20%;
                 padding: 0 10px;
                 

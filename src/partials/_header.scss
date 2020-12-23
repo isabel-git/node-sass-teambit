@@ -1,26 +1,54 @@
 header{
     height: 100px;
-    display: flex;
-    align-items: center;
-
-    // regole di debug
-    background-color: red;
-    // fine debug
     
     nav {
         
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid;
+        height: 100%;
         
-        // .box-right{
+        .box {
+        
+            display: flex;
+            align-items: center;
             
-        // }
-        ul{
-            @include ul;
-            
-            li{
-                display: inline-block;
+        }
+
+        .box.left{
+    
+            img{
+                width: 30px;
             }
+
+            span{
+                font-size: 25px;
+                margin-left: 10px
+            }
+        }
+        
+        .box.right{
+
+            ul{
+                @include ul;
+                
+                li{
+                    display: inline-block;
+                    margin-left: 10px;
+
+                    .header.button{
+                        background-color: $link_color;
+                        border: 1px solid $link_background;
+                        color: $link_background;
+                        
+                        &:hover{
+                            background-color: $link_background;
+                            color: $link_color;
+                        }
+                    }
+                }
+            }
+
         }
     }
     

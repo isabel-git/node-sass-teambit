@@ -23,19 +23,19 @@ a{
     width: 1200px;
     margin: 0 auto;
     // regole di debug
-    border: 1px solid;
+    // border: 1px solid;
     // fine degug
 }
 
  // regole di debug
- .section-top,
- .section-center-a,
- .row,
- .section-center-b,
- .section-bottom,
- .box {
-    @include debug;
-}
+//  .section-top,
+//  .section-center-a,
+//  .row,
+//  .section-center-b,
+//  .section-bottom,
+//  .box {
+//     @include debug;
+// }
 
 .button{
     background-color: $link_background;

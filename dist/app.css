@@ -1,21 +1,50 @@
 header {
   height: 100px;
-  display: flex;
-  align-items: center;
-  background-color: red;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid;
+  height: 100%;
 }
 
-header nav ul {
+header nav .box {
+  display: flex;
+  align-items: center;
+}
+
+header nav .box.left img {
+  width: 30px;
+}
+
+header nav .box.left span {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+header nav .box.right ul {
   list-style-type: none;
 }
 
-header nav ul li {
+header nav .box.right ul li {
   display: inline-block;
+  margin-left: 10px;
+}
+
+header nav .box.right ul li .header.button {
+  background-color: #fff;
+  border: 1px solid #30488f;
+  color: #30488f;
+}
+
+header nav .box.right ul li .header.button:hover {
+  background-color: #30488f;
+  color: #fff;
+}
+
+main .section-top {
+  padding: 140px 0;
 }
 
 main .section-top .container {
@@ -26,6 +55,29 @@ main .section-top .container .box {
   width: 50%;
 }
 
+main .section-top .container .box.left h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+main .section-top .container .box.left p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+main .section-top .container .box.left span {
+  color: #bdb5af;
+}
+
+main .section-top .container .box.left a {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+main .section-top .container .box.left a:hover {
+  color: #30488f;
+}
+
 main .section-top .container .box.right img {
   width: 100%;
 }
@@ -34,7 +86,12 @@ main .section-center-a {
   background-color: #ffe7d2;
 }
 
+main .section-center-a h2 {
+  margin: 70px 0;
+}
+
 main .section-center-a .row {
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -51,18 +108,41 @@ main .section-center-a .row .flex .box img {
   height: 100px;
 }
 
+main .section-center-a .row .image {
+  padding-top: 70px;
+}
+
 main .section-center-a .row .image img {
   width: 25%;
+}
+
+main .section-center-a .row.top {
+  border-bottom: 1px solid;
 }
 
 main .section-center-b .row {
   display: flex;
   width: 100%;
+  padding: 90px 0;
 }
 
 main .section-center-b .row .box {
   width: 50%;
-  min-height: 200px;
+}
+
+main .section-center-b .row .box h2,
+main .section-center-b .row .box p,
+main .section-center-b .row .box a {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+main .section-center-b .row .box a {
+  color: #30488f;
+}
+
+main .section-center-b .row .box a:hover {
+  color: #233569;
 }
 
 main .section-center-b .top .box.left img,
@@ -70,14 +150,26 @@ main .section-center-b .center-b .box.left img {
   width: 100%;
 }
 
+main .section-center-b .top .box.right,
+main .section-center-b .center-b .box.right {
+  margin-right: 140px;
+}
+
 main .section-center-b .top .box.right img,
 main .section-center-b .center-b .box.right img {
   width: 50%;
+  margin-top: 30px;
+}
+
+main .section-center-b .center-a .box.left,
+main .section-center-b .bottom .box.left {
+  margin-left: 140px;
 }
 
 main .section-center-b .center-a .box.left img,
 main .section-center-b .bottom .box.left img {
   width: 50%;
+  margin-top: 30px;
 }
 
 main .section-center-b .center-a .box.right img,
@@ -90,8 +182,13 @@ main .section-bottom {
   padding: 70px 0;
 }
 
+main .section-bottom h1 {
+  margin-bottom: 70px;
+}
+
 main .section-bottom h1,
-main .section-bottom .box.bottom {
+main .section-bottom .box.bottom,
+main .section-bottom a {
   text-align: center;
 }
 
@@ -123,12 +220,25 @@ main .section-bottom .box.top .box.profil img {
   vertical-align: middle;
 }
 
-main .section-bottom .box.bottom a:hover {
+main .section-bottom .box.bottom {
+  margin-top: 70px;
+}
+
+main .section-bottom .box.bottom span {
+  color: #bdb5af;
+}
+
+main .section-bottom .box.bottom .link {
+  margin-top: 20px;
+}
+
+main .section-bottom .box.bottom .link a:hover {
   color: #30488f;
 }
 
 footer {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 40px;
 }
 
 footer .container {
@@ -164,8 +274,6 @@ footer .container .box.right {
 
 footer .container .box.right ul {
   list-style-type: none;
-  border: 1px solid;
-  min-height: 200px;
   width: 20%;
   padding: 0 10px;
 }
@@ -193,17 +301,6 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid;
-}
-
-.section-top,
-.section-center-a,
-.row,
-.section-center-b,
-.section-bottom,
-.box {
-  min-height: 100px;
-  border: 1px solid;
 }
 
 .button {
